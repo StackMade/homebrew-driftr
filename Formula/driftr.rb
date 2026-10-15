@@ -5,21 +5,21 @@
 class Driftr < Formula
   desc "Fast JavaScript toolchain versioning without the friction"
   homepage "https://github.com/StackMade/driftr"
-  version "1.3.1"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StackMade/Driftr/releases/download/v1.3.1/driftr_1.3.1_darwin_amd64.tar.gz"
-      sha256 "183aadf659a2052300d397e98a2fa5846d1f1672943b35e3dd824746550eb7bb"
+      url "https://github.com/StackMade/Driftr/releases/download/v1.4.0/driftr_1.4.0_darwin_amd64.tar.gz"
+      sha256 "767f8d4cebd84379a135fec726e8cf18233b04541d44a61165895b569d050ffa"
 
       define_method(:install) do
         bin.install "driftr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StackMade/Driftr/releases/download/v1.3.1/driftr_1.3.1_darwin_arm64.tar.gz"
-      sha256 "d3f3338a15a24ec90744d61a8c79e1d37325bbf4d218f0303d29a5a1da667a21"
+      url "https://github.com/StackMade/Driftr/releases/download/v1.4.0/driftr_1.4.0_darwin_arm64.tar.gz"
+      sha256 "67ef8ebb9c8ed0694375577031a65b76f79adb28a170c814854c74b68bfcf2ae"
 
       define_method(:install) do
         bin.install "driftr"
@@ -29,15 +29,15 @@ class Driftr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StackMade/Driftr/releases/download/v1.3.1/driftr_1.3.1_linux_amd64.tar.gz"
-      sha256 "c714797cef59d3200bf7ece97c9f2e9c7da27bf512aedc54c1272a68cba9edc2"
+      url "https://github.com/StackMade/Driftr/releases/download/v1.4.0/driftr_1.4.0_linux_amd64.tar.gz"
+      sha256 "ad931f3601b9ff5e855e40c3fc44b63c906d01c464dadbd19df6fa417052f64f"
       define_method(:install) do
         bin.install "driftr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StackMade/Driftr/releases/download/v1.3.1/driftr_1.3.1_linux_arm64.tar.gz"
-      sha256 "e2f14b0261e595ea7a0592ec194c7d16d5911792a9a85a1161792d997dcbd916"
+      url "https://github.com/StackMade/Driftr/releases/download/v1.4.0/driftr_1.4.0_linux_arm64.tar.gz"
+      sha256 "b80e612cb413ac5ca05805c0cf1f6f80bbde2c91bc472e99f57413d79dc2371d"
       define_method(:install) do
         bin.install "driftr"
       end
